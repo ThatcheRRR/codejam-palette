@@ -1,0 +1,113 @@
+@import 'sass/_typography.scss';
+@import "sass/_buttons.scss";
+body {
+    margin: 0;
+}
+header {
+    height: 52px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 52px;
+        width: 100%; 
+        .menu {
+            margin-left: 19px;
+            display: flex;
+            align-items: center;
+            h1 {
+                margin-left: 25px;
+            }
+        }
+        .more {
+            margin-right: 20px;
+        }
+    }
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tools {
+    margin-top: 75px;
+    margin-left: 29px;
+    width: 228px;
+    height: 246px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    &__descr {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        &_link {
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 48px;
+            span {
+                margin-left: 35px;
+            }
+        }
+    }
+}
+.colors {
+    margin-top: 92px;
+    margin-left: 29px;
+    width: 228px;
+    height: 246px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    &__descr {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        &:first-child {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+        &_link {
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 48px;
+            &:nth-child(2n) {
+                margin-bottom: 12px;
+            }
+            &_circle {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+            }
+            .cur-color {
+                background: #FFC107;
+            }
+            .prev-color {
+                background: #FFEB3B;
+            }
+            .red-color {
+                background: #F74141;
+            }
+            .blue-color {
+                background: #00BCD4;
+            }
+            span {
+                margin-left: 35px;
+            }
+        }
+    }
+}
+canvas {
+    position: relative;
+    right: 600px;
+    top: 50px;
+    width: 512px;
+    height: 512px;
+    border: 1px solid #000000;
+}
