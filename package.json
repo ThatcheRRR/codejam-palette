@@ -2,16 +2,9 @@
   "name": "codejam-palette",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "eslint-config-rallycoding": "^3.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
-  },
+  "main": "app.js",
   "scripts": {
+    "lint": "eslint palette/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/ThatcheRRR/codejam-palette/issues"
   },
-  "homepage": "https://github.com/ThatcheRRR/codejam-palette#readme"
+  "homepage": "https://github.com/ThatcheRRR/codejam-palette#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
