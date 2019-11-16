@@ -77,8 +77,6 @@ function rgbConvert(r, g, b) {
   return `#${redConvert}${greenConvert}${blueConvert}`;
 }
 
-const kek = document.querySelector('.colors');
-
 function drawing(e) {
   if (activeTool === 'pencil') {
     ctx.fillStyle = currentColor;
@@ -205,7 +203,6 @@ for (let i = 0; i < tool.length; i += 1) {
 canvas.addEventListener('mousedown', drawing);
 choose.addEventListener('mousedown', colorPicker);
 canvas.addEventListener('mousedown', colorPicker);
-kek.addEventListener('mousedown', changeCurrentColor, true);
 choose.addEventListener('input', selectCurrentColor);
 document.addEventListener('keyup', binds);
 window.addEventListener('beforeunload', save);
