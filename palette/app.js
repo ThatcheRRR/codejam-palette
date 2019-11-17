@@ -16,6 +16,7 @@ const blue = document.querySelector('.blue');
 const previous = document.querySelector('.previous-color');
 const color = document.querySelector('input');
 const sc = Math.round(maxFieldSize / size);
+const colors = document.querySelector('.colors');
 const tools = ['bucket', 'colorPicker', 'pencil'];
 
 let pickerActive = false;
@@ -76,8 +77,6 @@ function rgbConvert(r, g, b) {
   if (blueConvert.length === 1) blueConvert = `0${blueConvert}`;
   return `#${redConvert}${greenConvert}${blueConvert}`;
 }
-
-const kek = document.querySelector('.colors');
 
 function drawing(e) {
   if (activeTool === 'pencil') {
@@ -202,10 +201,10 @@ for (let i = 0; i < tool.length; i += 1) {
   tool[i].addEventListener('mousedown', selectTool);
 }
 
+colors.addEventListener('mousedown', changeCurrentColor)
 canvas.addEventListener('mousedown', drawing);
 choose.addEventListener('mousedown', colorPicker);
 canvas.addEventListener('mousedown', colorPicker);
-kek.addEventListener('mousedown', changeCurrentColor, true);
 choose.addEventListener('input', selectCurrentColor);
 document.addEventListener('keyup', binds);
 window.addEventListener('beforeunload', save);
