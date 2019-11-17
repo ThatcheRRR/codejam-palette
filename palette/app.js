@@ -201,7 +201,7 @@ for (let i = 0; i < tool.length; i += 1) {
   tool[i].addEventListener('mousedown', selectTool);
 }
 
-colors.addEventListener('mousedown', changeCurrentColor)
+colors.addEventListener('mousedown', changeCurrentColor);
 canvas.addEventListener('mousedown', drawing);
 choose.addEventListener('mousedown', colorPicker);
 canvas.addEventListener('mousedown', colorPicker);
