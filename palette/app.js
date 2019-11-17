@@ -16,6 +16,7 @@ const blue = document.querySelector('.blue');
 const previous = document.querySelector('.previous-color');
 const color = document.querySelector('input');
 const sc = Math.round(maxFieldSize / size);
+const colors = document.querySelector('.colors');
 const tools = ['bucket', 'colorPicker', 'pencil'];
 
 let pickerActive = false;
@@ -200,6 +201,7 @@ for (let i = 0; i < tool.length; i += 1) {
   tool[i].addEventListener('mousedown', selectTool);
 }
 
+colors.addEventListener('mousedown', changeCurrentColor)
 canvas.addEventListener('mousedown', drawing);
 choose.addEventListener('mousedown', colorPicker);
 canvas.addEventListener('mousedown', colorPicker);
