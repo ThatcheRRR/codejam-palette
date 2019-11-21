@@ -98,7 +98,7 @@ function drawing(e) {
 }
 
 function colorPicker(e) {
-  if (pickerActive === true && e.target === canvas) {
+  if (pickerActive && e.target === canvas) {
     const r = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data[0];
     const g = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data[1];
     const b = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data[2];
